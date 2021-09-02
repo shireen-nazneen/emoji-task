@@ -1,0 +1,29 @@
+.App {
+  text-align: center;
+}
+.s{
+  width:1400px;
+}
+.card{
+  padding-block-end: 10px;
+  background-color: aqua;
+  height: 200-px;
+  width: 150px;
+  border-color: black;
+  border-style: solid;
+}
+.image{
+  font-size: 300%;
+}
+.flex-container {
+  padding: 10px;
+}
+.title-text{
+  font-size: 20px;
+}
+
+.form{
+  padding-top: 20px;
+
+}
+
