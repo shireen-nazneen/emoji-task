@@ -1,11 +1,15 @@
 import React from "react";
 import './App.css'
 
-const SearchPage = (props) => {
+const SearchPage = ({onsubmit,onchange}) => {
+
   return (
-      <form  className="form">
-          <input className="form-control " type="text" placeholder="Search -emoji" aria-label="Search" className="s" onChange={props.fun}></input>
-      </form>   
+      <form   className="form"  onSubmit={(e)=>onsubmit(e)} >
+      <div>
+          <input type="text" placeholder="Search -emoji" onChange={(e)=> onchange(e)} ></input>
+          <button type="submit" disabled={false}>click me</button>
+          </div>
+       </form>   
   );
 }
 
