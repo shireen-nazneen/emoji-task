@@ -6,8 +6,8 @@ const SearchPage = ({onsubmit,onchange}) => {
   return (
       <form   className="form"  onSubmit={(e)=>onsubmit(e)} >
       <div>
-          <input type="text" placeholder="Search -emoji" onChange={(e)=> onchange(e)} ></input>
-          <button type="submit" disabled={false}>click me</button>
+          <input className=" bg-white shadow box rounded-left"  style={{"widht":"500px"}} type="text" placeholder="Search -emoji" onChange={(e)=> onchange(e)} ></input>
+          <button className="bg-white shadow box rounded-right"  type="submit" disabled={false}>click me</button>
           </div>
        </form>   
   );

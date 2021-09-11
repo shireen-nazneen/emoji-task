@@ -16,6 +16,7 @@ function App() {
   // this is the setsate method  for initliaz 
   const [elemnt, setEle] = useState("")
   const [searchElement, setSearchElememnt] = useState("")
+  const [disabale, setDisable]=useState(false)
 
   // this is my onsubmit method for onclick
   function onsubmit(e) {
@@ -27,8 +28,11 @@ function App() {
 
 // this is on change method for input box 
   function onchange(e) {
-    console.log(e.target.value)
     setEle(e.target.value);
+    setDisable(disabale)
+    console.log(disabale)
+
+    
   }
 
 
@@ -37,18 +41,18 @@ function App() {
   let displayLimited = 0
   const My_element = newList.filter((e) => {
     if (e.title.includes(searchElement)) {
+
       found = false
       displayLimited++
       if (displayLimited <= 10) {
         return e.title
-
       }
-
     }
   })
 
   return (
     <div className="App">
+    <h3 className="text-shadow -black">Emoji</h3>
       <SearchPage onsubmit={onsubmit} onchange={onchange}></SearchPage>
       <div className="container">
         <div className="mb-10 shadow box">
